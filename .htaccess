@@ -1,0 +1,2 @@
+# To make MP3 streaming on Safari with Cloudflare CF
+SetEnvIfNoCase Request_URI . (?:mp4|ogv|webm)$ no-gzip dont-vary
