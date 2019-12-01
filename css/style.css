@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro|Merriweather:300&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+}
+
+html {
+	scroll-behavior: smooth;
+	overflow: auto
+}
+
+body{
+  margin:0;
+  font-family: 'Merriweather', serif;
+  font-size:17px;
+  color:#926239;
+  line-height:1.6;
+  overflow-x: hidden;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+a:link {
+  color: #99ffcc;
+}
+
+a:visited {
+  color: #cc99ff;
+}
+
+
+
+/* Mobile */
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+
+video { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url('media/poster1.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+#showcase{
+  background-size:cover;
+  background-position:center;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
+}
+
+#showcase h1{
+  color: rgba(255, 204, 153, 0.9);
+  font-size:5.5vh;
+  line-height:1.2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  color: rgba(255, 204, 153, 0.7);
+  font-size:3vh;
+  max-width: 100vh;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+
+#showcase .logo {
+  max-width: 25vh;
+  max-height: 25vh;
+  transition: 0.5s;
+  background-image: url("media/logo.png");
+}
+
+#showcase .button{
+  font-size:3.5vh;
+  text-decoration:none;
+  color:#4d0028;
+  border:#4d0028 3px solid;
+  background: rgba(44, 00, 20, 0.2);
+  padding:12px 48px;
+  border-radius: 0px;
+  margin-top:20px;
+  transition: 0.3s;
+}
+
+#showcase .button:hover{
+  background: rgba(44, 00, 20, 0.8);
+  padding: 6px 42px;
+  color: rgba(255, 204, 153, 0.8);
+  border: rgba(00, 00, 00, 0.2) 9px solid;
+}
+
+#info{
+  padding: 5vh 5vh;
+  background:#000;
+  color: rgba(255, 204, 153, 0.8);
+  text-align:center;
+  display:absolute;
+}
+
+#info .box-1, #info .box-3{
+  background: rgba(44, 00, 20, 0.9);
+  padding:20px;
+}
+
+#info .box-2{
+  padding:20px;
+  background:#000;
+}
+
+#footer{
+  padding: 5vh 25vh;
+  color: rgba(255, 204, 153, 1.0);
+  background: rgba(44, 00, 20, 1.0);
+  text-align: center;
+}
+/*mobile*/
+
+/* PC */
+@media all and (min-width:800px) {
+
+video { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url('media/poster1.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+#showcase{
+  background-size:cover;
+  background-position:center;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
+}
+
+#showcase h1{
+  color: rgba(255, 204, 153, 0.9);
+  font-size:50px;
+  line-height:1.2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  color: rgba(255, 204, 153, 0.7);
+  font-size:20px;
+  max-width: 100vh;
+  margin-bottom: 30px;
+}
+
+#showcase .logo {
+  max-width: 100%;
+  max-height: 100%;
+  background-image: url("media/logo.png");
+}
+
+#showcase .button{
+  font-size:24px;
+  text-decoration:none;
+  color:#4d0028;
+  border:#4d0028 3px solid;
+  background: rgba(44, 00, 20, 0.2);
+  padding:12px 48px;
+  border-radius: 0px;
+  margin-top:20px;
+  transition: 0.3s;
+}
+
+#showcase .button:hover{
+  background: rgba(44, 00, 20, 0.8);
+  padding: 6px 42px;
+  color: rgba(255, 204, 153, 0.8);
+  border: rgba(00, 00, 00, 0.2) 9px solid;
+}
+
+#info{
+  padding: 5vh 5vh;
+  background:#000;
+  color: rgba(255, 204, 153, 0.8);
+  text-align:center;
+  display:absolute;
+}
+
+#info .box-1, #info .box-3{
+  background: rgba(44, 00, 20, 0.9);
+  padding:20px;
+}
+
+#info .box-2{
+  padding:20px;
+  background:#000;
+}
+
+#footer{
+  padding: 5vh 25vh;
+  color: rgba(255, 204, 153, 1.0);
+  background: rgba(44, 00, 20, 1.0);
+  text-align: center;
+}
+
+}
+ /* end PC */
+
+
