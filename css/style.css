@@ -197,9 +197,9 @@ video {
   justify-content:center;
 /*   align-items:center; */
   text-align:center;
-  display: -webkit-flex; /* Safari */
-  display: flex;
-  flex: 1;
+/*   display: -webkit-flex; /* Safari */ */
+  display: grid;
+  /* flex: 1; */
 }
 
 #dbox h1{
@@ -211,7 +211,7 @@ video {
 
 #dbox .dbox-1{
   padding: 5vh;
-  text-align: left;
+  text-align: center;
 }
 
 #dbox img {
@@ -228,7 +228,6 @@ video {
   background: #050505;
   text-align: center;
 }
-
 
 /*mobile*/
 
