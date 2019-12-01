@@ -238,7 +238,14 @@ video {
   padding: 10vh 5vh;
   color: rgba(255, 204, 153, 0.7);
   background: #050505;
-  text-align: center;
+  text-align: left;
+}
+
+#footer .bleak{
+  color: rgba(255, 204, 153, 0.6);
+  padding-top: 1.5vh;
+  text-align: left;
+  font-size:1.6vh;
 }
 
 /*mobile*/
@@ -374,10 +381,10 @@ video {
 }
 
 #footer{
-  padding: 10vh 25vh;
+  padding: 10vh 35vh;
   color: rgba(255, 204, 153, 0.7);
   background: #050505;
-  text-align: center;
+  text-align: left;
 }
 
 }
