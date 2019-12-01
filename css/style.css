@@ -14,7 +14,7 @@ html {
 body{
   margin:0;
   font-family: 'Merriweather', serif;
-  font-size:17px;
+  font-size:2vh;
   color:#926239;
   line-height:1.6;
   overflow-x: hidden;
@@ -30,7 +30,26 @@ a:visited {
   color: #cc99ff;
 }
 
+/* Optional styling */
+/* summary::-webkit-details-marker {
+  color: blue;
+} */
+summary:focus {
+  outline-style: none; 
+}
 
+details[open] summary ~ * {
+  animation: sweep .5s ease-in;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0.1; margin-left: -5px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
+span.test2 {
+  writing-mode: vertical-rl; 
+}
 
 /* Mobile */
 
@@ -64,38 +83,38 @@ video {
   padding:0 20px;
 }
 
-#showcase h1{
-  color: rgba(255, 204, 153, 0.9);
-  font-size:5.5vh;
-  line-height:1.2;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#showcase p{
-  color: rgba(255, 204, 153, 0.7);
-  font-size:3vh;
-  max-width: 100vh;
-  margin-bottom: 30px;
-  transition: 0.5s;
-}
-
 #showcase .logo {
   max-width: 25vh;
   max-height: 25vh;
+  margin-bottom: 2vh;
   transition: 0.5s;
   background-image: url("media/logo.png");
 }
 
+#showcase h1{
+  color: rgba(255, 204, 153, 0.9);
+  font-size:4vh;
+  line-height:1.2;
+  margin-bottom: 2vh;
+}
+
+#showcase p{
+  color: rgba(255, 204, 153, 0.7);
+  font-size:2vh;
+  max-width: 100vh;
+  margin-bottom: 4vh;
+  transition: 0.5s;
+}
+
 #showcase .button{
-  font-size:3.5vh;
+  margin-top:2vh;
+  font-size:2.3vh;
   text-decoration:none;
   color:#4d0028;
   border:#4d0028 3px solid;
   background: rgba(44, 00, 20, 0.2);
   padding:12px 48px;
   border-radius: 0px;
-  margin-top:20px;
   transition: 0.3s;
 }
 
@@ -107,8 +126,8 @@ video {
 }
 
 #info{
-  padding: 5vh 5vh;
-  background:#000;
+  padding: 5vh 0vh;
+  background: rgba(44, 00, 20, 0.9);
   color: rgba(255, 204, 153, 0.8);
   text-align:center;
   display:absolute;
@@ -116,20 +135,101 @@ video {
 
 #info .box-1, #info .box-3{
   background: rgba(44, 00, 20, 0.9);
-  padding:20px;
+  padding:5vh 5vh;
 }
 
 #info .box-2{
-  padding:20px;
+  padding:5vh 5vh;
+  background: rgba(05, 05, 05, 0.8);
+}
+
+
+#box{
+  padding: 0vh 0vh;
+  color: rgba(255, 204, 153, 0.8);
+  justify-content:center;
+/*   align-items:center; */
+  text-align:center;
+  display: absolute;
+}
+
+#box .box-1{
+  background: rgba(22, 00, 10, 0.7);
+  text-align:center;
+  padding: 2vh;
+  /* padding:20px; */
+}
+
+#box .box-2{
+  /* padding:20px; */
+  text-align:center;
+  color:#050505;
+  background: rgba(255, 204, 153, 0.7);
+  padding: 2vh;
+}
+
+#box .box-3{
+  /* padding:20px; */
+  text-align:center;
   background:#000;
+  padding: 2vh;
+}
+
+#box .box-4{
+  /* padding:20px; */
+  text-align:center;
+  background: rgba(05, 05, 05, 0.8);
+  padding-bottom: 2vh;
+}
+
+#box img {
+  border: 2px solid #000;
+  padding: 5px;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+#dbox{
+  padding: 0vh 0vh;
+  background: rgba(22, 00, 10, 0.7);
+  color: rgba(255, 204, 153, 0.7);
+  justify-content:center;
+/*   align-items:center; */
+  text-align:center;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex: 1;
+}
+
+#dbox h1{
+  color: rgba(255, 204, 153, 0.8);
+  font-size:2.5vh;
+  line-height:1.2;
+  padding: 1vh;
+}
+
+#dbox .dbox-1{
+  padding: 5vh;
+  text-align: left;
+}
+
+#dbox img {
+  border: 2px solid #000;
+  padding: 5px;
+  border-radius: 50%;
+  max-width: 22vh;
+  height: auto;
 }
 
 #footer{
-  padding: 5vh 25vh;
-  color: rgba(255, 204, 153, 1.0);
-  background: rgba(44, 00, 20, 1.0);
+  padding: 10vh 5vh;
+  color: rgba(255, 204, 153, 0.7);
+  background: #050505;
   text-align: center;
 }
+
+
 /*mobile*/
 
 /* PC */
@@ -150,61 +250,10 @@ video {
   transition: 1s opacity;
 }
 
-#showcase{
-  background-size:cover;
-  background-position:center;
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:0 20px;
-}
-
-#showcase h1{
-  color: rgba(255, 204, 153, 0.9);
-  font-size:50px;
-  line-height:1.2;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#showcase p{
-  color: rgba(255, 204, 153, 0.7);
-  font-size:20px;
-  max-width: 100vh;
-  margin-bottom: 30px;
-}
-
-#showcase .logo {
-  max-width: 100%;
-  max-height: 100%;
-  background-image: url("media/logo.png");
-}
-
-#showcase .button{
-  font-size:24px;
-  text-decoration:none;
-  color:#4d0028;
-  border:#4d0028 3px solid;
-  background: rgba(44, 00, 20, 0.2);
-  padding:12px 48px;
-  border-radius: 0px;
-  margin-top:20px;
-  transition: 0.3s;
-}
-
-#showcase .button:hover{
-  background: rgba(44, 00, 20, 0.8);
-  padding: 6px 42px;
-  color: rgba(255, 204, 153, 0.8);
-  border: rgba(00, 00, 00, 0.2) 9px solid;
-}
 
 #info{
-  padding: 5vh 5vh;
-  background:#000;
+  padding: 5vh 35vh;
+  background: rgba(44, 00, 20, 0.9);
   color: rgba(255, 204, 153, 0.8);
   text-align:center;
   display:absolute;
@@ -212,18 +261,97 @@ video {
 
 #info .box-1, #info .box-3{
   background: rgba(44, 00, 20, 0.9);
-  padding:20px;
+  padding:5vh 5vh;
 }
 
 #info .box-2{
-  padding:20px;
+  padding:5vh 5vh;
+  background: rgba(05, 05, 05, 0.8);
+}
+
+
+#box{
+  padding: 0vh 0vh;
+  color: rgba(255, 204, 153, 0.8);
+  justify-content:center;
+/*   align-items:center; */
+  text-align:center;
+  display: absolute;
+}
+
+#box .box-1{
+  background: rgba(22, 00, 10, 0.7);
+  text-align:center;
+  padding: 2vh;
+  /* padding:20px; */
+}
+
+#box .box-2{
+  /* padding:20px; */
+  text-align:center;
+  color:#050505;
+  background: rgba(255, 204, 153, 0.7);
+  padding: 2vh;
+}
+
+#box .box-3{
+  /* padding:20px; */
+  text-align:center;
   background:#000;
+  padding: 2vh;
+}
+
+#box .box-4{
+  /* padding:20px; */
+  text-align:center;
+  background: rgba(05, 05, 05, 0.8);
+  padding-bottom: 2vh;
+}
+
+#box img {
+  border: 2px solid #000;
+  padding: 5px;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+#dbox{
+  padding: 0vh 0vh;
+  background: rgba(22, 00, 10, 0.7);
+  color: rgba(255, 204, 153, 0.7);
+  justify-content:center;
+/*   align-items:center; */
+  text-align:center;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex: 1;
+}
+
+#dbox h1{
+  color: rgba(255, 204, 153, 0.8);
+  font-size:2.5vh;
+  line-height:1.2;
+  padding: 1vh;
+}
+
+#dbox .dbox-1{
+  padding: 5vh;
+  text-align: left;
+}
+
+#dbox img {
+  border: 2px solid #000;
+  padding: 5px;
+  border-radius: 50%;
+  max-width: 22vh;
+  height: auto;
 }
 
 #footer{
-  padding: 5vh 25vh;
-  color: rgba(255, 204, 153, 1.0);
-  background: rgba(44, 00, 20, 1.0);
+  padding: 10vh 25vh;
+  color: rgba(255, 204, 153, 0.7);
+  background: #050505;
   text-align: center;
 }
 
