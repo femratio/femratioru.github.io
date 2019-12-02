@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro|Merriweather:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300&display=swap');
 
 *{
   margin:0;
@@ -12,7 +12,7 @@ html {
 }
 
 body{
-  -webkit-font-smoothing: antialiased
+  -webkit-font-smoothing: antialiased;
   margin:0;
   font-family: 'Merriweather', serif;
   font-size:1rem;
@@ -91,6 +91,12 @@ video {
   margin-bottom: 2rem;
   transition: 0.5s;
   background-image: url("media/logo.png");
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #showcase h1{
@@ -255,6 +261,12 @@ video {
   border-radius: 50%;
   max-width: 10rem;
   height: auto;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #footer{
@@ -314,6 +326,12 @@ video {
   margin-bottom: 2rem;
   transition: 0.5s;
   background-image: url("media/logo.png");
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #showcase h1{
@@ -351,21 +369,21 @@ video {
 
 #info{
   padding: 0rem 18vw;
-  background: rgba(44, 00, 20, 0.9);
+  background: rgba(22, 00, 10, 0.9);
   color: rgba(255, 204, 153, 0.8);
   text-align:left;
   display:absolute;
 }
 
 #info .box-1{
-  background: rgba(05, 05, 05, 0.8);
+  background: rgba(05, 05, 05, 0.9);
   padding-top:7rem;
   padding-left:5rem;
   padding-right:5rem;
 }
 
 #info .box-2{
-  background: rgba(05, 05, 05, 0.8);
+  background: rgba(05, 05, 05, 0.9);
   padding-top:2.5rem;
   padding-left:5rem;
   padding-right:5rem;
@@ -374,13 +392,13 @@ video {
 
 #info .box-3{
   padding:5rem 5rem;
-  background: rgba(05, 05, 05, 0.8);
+  background: rgba(05, 05, 05, 0.9);
 }
 
 
 #box{
   padding: 0vh 0vh;
-  color: rgba(255, 204, 153, 0.8);
+  color: rgba(255, 204, 153, 0.9);
   justify-content:center;
 /*   align-items:center; */
   text-align:left;
@@ -475,6 +493,12 @@ video {
   border-radius: 50%;
   max-width: 12.5rem;
   height: auto;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #footer{
