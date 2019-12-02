@@ -305,6 +305,36 @@ html {
 	font-size: 2vmin;
 }
 
+#showcase .logo {
+  max-width: 15rem;
+  max-height: 15rem;
+  margin-bottom: 2rem;
+}
+
+#showcase h1{
+  font-size:3rem;
+  line-height:1.2;
+  margin-bottom: 1rem;
+}
+
+#showcase p{
+  font-size:1.5rem;
+  max-width: 100vmax;
+  margin-bottom: 2rem;
+  transition: 0.5s;
+}
+
+#showcase .button{
+  margin-top:1rem;
+  font-size:1.6rem;
+  padding:0.5rem 2rem;
+  transition: 0.3s;
+}
+
+#showcase .button:hover{
+  padding: 0.4rem 1.8rem;
+}
+
 #info .box-1{
   padding-top:4rem;
   padding-left:5rem;
