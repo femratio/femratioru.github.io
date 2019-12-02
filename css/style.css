@@ -557,6 +557,12 @@ video {
   display:absolute;
 }
 
+#info h1
+{
+  font-size:1.6rem;
+  padding-bottom: 0.5rem;
+} 
+
 #info .box-1{
   background: rgba(05, 05, 05, 1);
   padding-top:7rem;
