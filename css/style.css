@@ -377,6 +377,7 @@ video {
 }
 
 #info{
+  font-size:1.1rem;
   padding: 0rem 18vw;
   background: rgba(22, 00, 10, 0.9);
   color: rgba(255, 204, 153, 0.8);
@@ -511,6 +512,7 @@ video {
 }
 
 #footer{
+  font-size:1.1rem;
   padding: 7.5rem 18vw;
   padding-top: 5rem;
   color: rgba(255, 204, 153, 0.7);
