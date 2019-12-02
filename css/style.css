@@ -268,7 +268,7 @@ video {
   color: rgba(255, 204, 153, 0.6);
   padding-top: 1.5rem;
   text-align: left;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 /* end mobile devices*/
@@ -548,7 +548,7 @@ video {
 	
 }
 
-@media (max-height:320px) {
+@media (max-width:320px) {
 	
 	 
 #showcase .logo {
