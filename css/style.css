@@ -30,9 +30,8 @@ body
 	-webkit-text-size-adjust:	none;
 	margin:						0;
 	font-family: 				'Merriweather', serif;
-	font-weight: 				300;
 	color:						#926239;
-	line-height:				1.6;
+	line-height:				1.7;
 	overflow-x: 				hidden;
 	overflow: 					auto;
 	scroll-behavior: 			smooth;
@@ -157,7 +156,6 @@ video
 #info{
   padding: 0rem 0vh;
   font-size:1rem;
-  font-weight: 300;
   background: rgba(44, 00, 20, 0.9);
   color: rgba(255, 204, 153, 0.8);
   text-align:left;
@@ -165,8 +163,7 @@ video
 }
 
 #info h1{
-  font-weight: 300;
-  font-size:1.3rem;
+  font-size:1.2rem;
 }
 
 #info .box-1{
