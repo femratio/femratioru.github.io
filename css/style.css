@@ -50,16 +50,10 @@ a:visited
 
 br
 {
-	line-height:				0.5;
+	display:					block; /* makes it have a width */
+	content:					""; /* clears default height */
+	margin-top:					5px; /* change this to whatever height you want it */
 }
-
-hr
-{ 
-	height:						5px;
-	margin:						0px;
-	border:						0px;
-	visibility:					hidden;
-} 
 
 /* Optional styling */
 /* summary::-webkit-details-marker {
@@ -180,14 +174,14 @@ video
 }
 
 #info .box-1{
-  background: rgba(05, 05, 05, 0.8);
+  background: rgba(05, 05, 05, 1);
   padding-top:4rem;
   padding-left:2.5rem;
   padding-right:3rem;
 }
 
 #info .box-2{
-  background: rgba(05, 05, 05, 0.8);
+  background: rgba(05, 05, 05, 1);
   padding-top:2.5rem;
   padding-left:2.5rem;
   padding-right:3rem;
@@ -196,7 +190,7 @@ video
 
 #info .box-3{
   padding:5rem 2.5rem;
-  background: rgba(05, 05, 05, 0.8);
+  background: rgba(05, 05, 05, 1);
 }
 
 
@@ -218,7 +212,7 @@ video
 
 #box .box-2{
   color:#050505;
-  background: rgba(255, 204, 153, 0.7);
+  background: rgba(255, 204, 153, 0.8);
   padding: 1.5rem;
   text-align:left;
   padding-left: 2.5rem;
@@ -538,7 +532,7 @@ video {
 }
 
 #info{
-  font-size:1.1rem;
+  font-size:1.2rem;
   padding: 0rem 18vw;
   background: rgba(22, 00, 10, 0.9);
   color: rgba(255, 204, 153, 0.8);
@@ -547,14 +541,14 @@ video {
 }
 
 #info .box-1{
-  background: rgba(05, 05, 05, 0.9);
+  background: rgba(05, 05, 05, 1);
   padding-top:7rem;
   padding-left:5rem;
   padding-right:5rem;
 }
 
 #info .box-2{
-  background: rgba(05, 05, 05, 0.9);
+  background: rgba(05, 05, 05, 1);
   padding-top:2.5rem;
   padding-left:5rem;
   padding-right:5rem;
@@ -563,7 +557,7 @@ video {
 
 #info .box-3{
   padding:5rem 5rem;
-  background: rgba(05, 05, 05, 0.9);
+  background: rgba(05, 05, 05, 1);
 }
 
 
@@ -577,6 +571,11 @@ video {
   font-size:1.2rem;
 }
 
+#box h1{
+  font-size:1.4rem;
+  padding-bottom: 0.5rem;
+}
+
 #box .box-1{
   background: rgba(22, 00, 10, 0.7);
   padding: 1.5rem;
@@ -586,7 +585,7 @@ video {
 
 #box .box-2{
   color:#050505;
-  background: rgba(255, 204, 153, 0.7);
+  background: rgba(255, 204, 153, 0.9);
   padding: 1.5rem;
   text-align:left;
   padding-left: 5rem;
