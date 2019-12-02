@@ -1,54 +1,62 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300&display=swap');
 
-*{
-  margin:0;
-  padding:0;
-  -webkit-font-smoothing: antialiased;
+*
+{
+	margin:						0;
+	padding:					0;
+	-webkit-font-smoothing: 	antialiased;
 }
 
-html {
-	scroll-behavior: smooth;
-	overflow: auto;
-	font-size: 5vmin;
+html
+{
+	scroll-behavior:			smooth;
+	overflow: 					auto;
+	font-size: 					5vmin;
 }
 
-img {
-  user-drag: none; 
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+img
+{
+	user-drag: 					none; 
+	user-select:				none;
+	-moz-user-select:			none;
+	-webkit-user-drag:			none;
+	-webkit-user-select:		none;
+	-ms-user-select:			none;
 }
 
-body{
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: none;
-  margin:0;
-  font-family: 'Merriweather', serif;
-  font-weight: 300;
-  color:#926239;
-  line-height:1.6;
-  overflow-x: hidden;
-  overflow: auto;
-  scroll-behavior: smooth;
+body
+{
+	-webkit-font-smoothing: 	antialiased;
+	-webkit-text-size-adjust:	none;
+	margin:						0;
+	font-family: 				'Merriweather', serif;
+	font-weight: 				300;
+	color:						#926239;
+	line-height:				1.6;
+	overflow-x: 				hidden;
+	overflow: 					auto;
+	scroll-behavior: 			smooth;
 }
 
-a:link {
-  color: #99ffcc;
+a:link
+{
+	color:						#99ffcc;
 }
 
-a:visited {
-  color: #cc99ff;
+a:visited
+{
+	color:						#cc99ff;
 }
 
-br {
-   line-height: 0.5;
+br
+{
+	line-height:				0.5;
 }
 
-hr { 
-  border-width: 5px;
-  color: rgba(00, 00, 00, 0.0);
+hr
+{ 
+	border-width:				5px;
+	visibility:					hidden;
 } 
 
 /* Optional styling */
@@ -56,17 +64,20 @@ hr {
   color: blue;
 } */
 
-summary:focus {
-  outline-style: none; 
+summary:focus
+{	
+	outline-style:				none; 
 }
 
-details[open] summary ~ * {
-  animation: sweep .5s ease-in;
+details[open] summary ~ *
+{
+	animation:					sweep .5s ease-in;
 }
 
-@keyframes sweep {
-  0%    {opacity: 0.1; margin-left: -1rem}
-  100%  {opacity: 1; margin-left: 0px}
+@keyframes sweep
+{
+	0%							{opacity: 0.1; margin-left: -1rem}
+	100%						{opacity: 1; margin-left: 0px}
 }
 
 /* Mobile */
@@ -74,19 +85,20 @@ details[open] summary ~ * {
 /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 
 
-video { 
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: 60vw;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  background: #000;
-  background-size: cover;
-  transition: 1s opacity;
+video
+{ 
+	position: 					fixed;
+	top: 						50%;
+	left: 						50%;
+	min-width: 					100%;
+	min-height: 				100%;
+	width: 						auto;
+	height: 					60vw;
+	z-index: 					-100;
+	transform: 					translateX(-50%) translateY(-50%);
+	background: 				#000;
+	background-size: 			cover;
+	transition: 				1s opacity;
 }
 
 #showcase{
