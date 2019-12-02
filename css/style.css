@@ -30,6 +30,10 @@ a:visited {
   color: #cc99ff;
 }
 
+br {
+   line-height: 0.5;
+}
+
 /* Optional styling */
 /* summary::-webkit-details-marker {
   color: blue;
@@ -163,7 +167,6 @@ video {
   text-align:left;
   display: absolute;
   font-size:1rem;
-    line-height:1.6;
 }
 
 #box .box-1{
