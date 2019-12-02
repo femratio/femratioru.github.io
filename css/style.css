@@ -317,7 +317,7 @@ video
 	/* end mobile devices*/
 	
 	/* iPAD */
-@media all and (min-width:768px) and (min-height:768px) {
+@media screen and (min-width:768px) and (min-height:768px) {
 
 html {
 	font-size: 2vmin;
@@ -455,7 +455,7 @@ html {
 	/* end iPAD */
 	
 	/* Desktop */
-@media all and (min-width:1240px) {
+@media screen and (min-width:1240px) {
 
 html {
 	font-size: 1.6vmin;
@@ -690,7 +690,7 @@ video {
 	/* end Desktop */
 	
 	/* narrow mobile */
-@media (max-height:420px) {
+@media screen and (max-height:420px) {
 	 
 #showcase .logo {
   max-width: 7rem;
@@ -746,7 +746,7 @@ video {
 	/* end narrow mobile */
 	
 	/* narrow and small mobile */
-@media (max-width:320px) {
+@media screen and (max-width:320px) {
 	
 	 
 #showcase .logo {
