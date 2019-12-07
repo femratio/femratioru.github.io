@@ -230,7 +230,7 @@ video
 	padding:					0vh 0vw;
 	background:					rgba(05, 05, 05, 0.9);
 	color:						rgba(255, 204, 153, 0.9);
-	justify-content:			center;
+	/* justify-content:			center; */
 	text-align:					left;
 	display:					absolute;
 	font-size:					1rem;
@@ -551,7 +551,7 @@ html {
 	padding: 0vh 5vw;
 	background: rgba(05, 05, 05, 0.9);
 	color: rgba(255, 204, 153, 0.9);
-	justify-content:center;
+	/* justify-content:center; */
 	/* align-items:center; */
 	text-align:left;
 	display: flex;
@@ -904,8 +904,9 @@ video {
 
 #list .bbox-1{
   color: rgba(255, 204, 153, 0.9);
-  margin-top: 5rem;
+  padding-top:				0;
   padding-left: 5rem;
+  margin-top: 5rem;
   padding-right: 2.5rem;
   margin-bottom: 7rem;
   text-align: left;
@@ -932,6 +933,7 @@ video {
 #list .bbox-4{
   color: rgba(255, 204, 153, 0.9);
   margin-top: 5rem;
+  padding-top:				0rem;
   padding-left: 0vw;
   padding-right: 5vw;
   margin-bottom: 7rem;
