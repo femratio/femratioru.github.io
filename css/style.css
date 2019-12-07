@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
 *
 {
@@ -7,8 +8,23 @@
 	-webkit-font-smoothing: 	antialiased;
 }
 
+ul
+{
+	list-style:					none; /* Remove HTML bullets */
+	padding:					0;
+	margin:						0;
+}
+
+li::before
+{
+	content:					"\25C6";
+	font-size:					1rem;
+	padding-right:				0.5rem;
+}
+
 html
 {
+	
 	scroll-behavior:			smooth;
 	overflow: 					auto;
 	font-size: 					5vmin;
@@ -61,12 +77,13 @@ br
 
 summary:focus
 {	
-	outline-style:				none; 
+    outline-style:				none; 
 }
 
 details[open] summary ~ *
 {
 	animation:					sweep .5s ease-in;
+
 }
 
 @keyframes sweep
@@ -162,33 +179,44 @@ video
 #info
 {
 	padding:					0rem 0vh;
-	font-size:					1rem;
-	background:					rgba(44, 00, 20, 0.9);
+	font-size:					1.1rem;
+	background:					rgba(22, 00, 10, 0.9);
 	color:						rgba(255, 204, 153, 0.8);
 	text-align:					left;
 	display:					absolute;
+	padding-bottom:				2.5rem;
+	padding-top:				2.5rem;
 }
 
 #info h1
 {
-	font-size:					1.2rem;
+	font-size:					2rem;
+	font-family: 				'Playfair Display', serif;
 }
 
 #info .box-1
 {
-	background:					rgba(05, 05, 05, 1);
+
+	background:					rgba(05, 05, 05, 0);
 	padding-top:				4rem;
 	padding-left:				2.5rem;
-	padding-right:				3rem;
+	padding-right:				2rem;
+	padding-bottom:				3.5rem;
 }
 
 #info .box-2
 {
-	background:					rgba(05, 05, 05, 1);
+	border:						rgba(255, 204, 153, 0.5) 2px solid;
+	border-radius:				5px;
+	text-align:					center;
+	background:					rgba(05, 05, 05, 0);
 	padding-top:				2.5rem;
-	padding-left:				2.5rem;
-	padding-right:				3rem;
+	padding-left:				-2.5rem;
+	padding-right:				-2.5rem;
 	padding-bottom:				2.5rem;
+	margin-left:				2.5rem;
+	margin-right:				2.5rem;
+	margin-bottom:				0rem;
 }
 
 #info .box-3
@@ -197,35 +225,110 @@ video
 	background:					rgba(05, 05, 05, 1);
 }
 
+#list
+{
+	padding:					0vh 0vw;
+	background:					rgba(05, 05, 05, 0.9);
+	color:						rgba(255, 204, 153, 0.9);
+	justify-content:			center;
+	text-align:					left;
+	display:					absolute;
+	font-size:					1rem;
+	line-height:				1.8;
+  
+}
+
+#list h1
+{
+	font-family: 				'Playfair Display', serif;
+	font-size:					1.8rem;
+	margin-bottom:				2rem;
+	border-bottom:				rgba(255, 204, 153, 0.5) 2px solid;
+}
+
+#list h2
+{
+	font-size:					1.2rem;
+}
+
+#list .bbox-1
+{
+	color:						rgba(255, 204, 153, 0.9);
+	padding-top:				2.5rem;
+	padding-left:				2.5rem;
+	padding-right:				2rem;
+	margin-bottom:				5rem;
+	text-align:					left;
+}
+
+#list .bbox-2
+{
+	color:						rgba(255, 204, 153, 0.9);
+	margin-top:					5rem;
+	padding-left:				2rem;
+	padding-right:				2rem;
+	margin-bottom:				5rem;
+	text-align:					left;
+}
+
+#list .bbox-3
+{
+	color:						rgba(255, 204, 153, 0.9);
+	margin-top:					5rem;
+	padding-left:				2rem;
+	padding-right:				5rem;
+	padding-bottom:				5rem;
+	text-align:					left;
+}
+
+#list .bbox-4{
+	color:						rgba(255, 204, 153, 0.9);
+	padding-top:				5rem;
+	padding-left:				2.5rem;
+	padding-right:				2rem;
+	text-align:					left;
+}
+
+#list .bbox-5
+{
+	color:						rgba(255, 204, 153, 0.9);
+	margin-top:					5rem;
+	padding-left:				2.5rem;
+	padding-right:				2rem;
+	padding-bottom:				5rem;
+	text-align:					left;
+}
 
 #box
 {
 	padding:					0vh 0vh;
-	color:						rgba(255, 204, 153, 0.8);
+	color:						rgba(255, 204, 153, 0.9);
 	justify-content:			center;
 	text-align:					left;
 	display:					absolute;
 	font-size:					1rem;
 }
 
-#box .box-1
+#box .bbox-1
 {
-	background:					rgba(22, 00, 10, 0.1);
+	background:					rgba(22, 00, 10, 0);
 	padding:					1.5rem;
 	text-align:					left;
 	padding-left:				2.5rem;
+	padding-right:				2rem;
 }
 
-#box .box-2
+#box .bbox-2
 {
-	color:						#050505;
-	background:					rgba(255, 204, 153, 0.8);
+	color:						rgba(255, 204, 153, 0.9);
+	background:					rgba(255, 204, 153, 0);
 	padding:					1.5rem;
 	text-align:					left;
 	padding-left:				2.5rem;
+	padding-right:				2rem;
 }
 
-#box .box-3
+#box .bbox-3
 {
 	background:					#000;
 	padding:					1.5rem;
@@ -254,8 +357,8 @@ video
 #dbox
 {
 	padding:					0vh 0vh;
-	background:					rgba(22, 00, 10, 0.7);
-	color:						rgba(255, 204, 153, 0.7);
+	background:					rgba(22, 00, 10, 0);
+	color:						rgba(255, 204, 153, 0.8);
 	justify-content:			center;
 	text-align:					left;
 	display:					absolute;
@@ -263,17 +366,16 @@ video
 
 #dbox h1
 {
+	font-family: 				'Playfair Display', serif;
 	color:						rgba(255, 204, 153, 0.8);
-	font-size:					1.4rem;
-	font-weight:				300;
+	font-size:					1.6rem;
+	padding-bottom:				1rem;
 	line-height:				1.2;
-	padding:					0.5rem;
-	padding-left:				0rem;
 }
 
 #dbox .dbox-1
 {
-	padding-top:				2rem;
+	padding-top:				2.5rem;
 	padding-left:				2.5rem;
 	padding-right:				2rem;
 	padding-bottom:				0rem;
@@ -284,6 +386,7 @@ video
 {
 	padding:					1.5rem;
 	padding-left:				2.5rem;
+	padding-right:				2rem;
 	text-align:					left;
 }
 
@@ -292,6 +395,7 @@ video
 	padding:					1.5rem;
 	padding-left:				2.5rem;
 	padding-bottom:				2.5rem;
+	padding-right:				2rem;
 	text-align:					left;
 }
 
@@ -312,17 +416,17 @@ video
 
 #footer
 {
-	font-size:					1.1rem;
+	font-size:					1rem;
 	padding:					5rem 2.5rem;
-	padding-top:				2.5rem;
-	color:						rgba(255, 204, 153, 0.7);
+	padding-top:				5rem;
+	color:						rgba(255, 204, 153, 0.8);
 	background:					#050505;
 	text-align:					left;
 }
 
 #footer .bleak
 {
-	color:						rgba(255, 204, 153, 0.6);
+	color:						rgba(255, 204, 153, 0.8);
 	padding-top:				1.5rem;
 	text-align:					left;
 	font-size:					0.8rem;
@@ -333,22 +437,45 @@ video
 @media screen and (min-width:768px) and (min-height:768px) {
 
 html {
-	font-size: 2vmin;
+	font-size: 1.8vmin;
+}
+
+#showcase{
+  background-size:cover;
+  background-position:center;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
 }
 
 #showcase .logo {
   max-width: 15rem;
   max-height: 15rem;
   margin-bottom: 2rem;
+  transition: 0.5s;
+  background-image: url("media/logo.png");
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #showcase h1{
+	
+  color: rgba(255, 204, 153, 0.9);
   font-size:3rem;
   line-height:1.2;
   margin-bottom: 1rem;
 }
 
 #showcase p{
+  color: rgba(255, 204, 153, 0.7);
   font-size:1.5rem;
   max-width: 100vmax;
   margin-bottom: 2rem;
@@ -358,47 +485,171 @@ html {
 #showcase .button{
   margin-top:1rem;
   font-size:1.6rem;
+  text-decoration:none;
+  color:#4d0028;
+  border:#4d0028 3px solid;
+  background: rgba(20, 00, 10, 0.7);
   padding:0.5rem 2rem;
   transition: 0.3s;
 }
 
 #showcase .button:hover{
+  background: rgba(44, 00, 20, 0.8);
   padding: 0.4rem 1.8rem;
+  color: rgba(255, 204, 153, 0.8);
+  border: rgba(00, 00, 00, 0.2) 9px solid;
 }
 
-#info .box-1{
-  padding-top:4rem;
-  padding-left:5rem;
-  padding-right:3rem;
+#info{
+  font-size:1.2rem;
+  padding: 0rem 5vw;
+  background: rgba(22, 00, 10, 0.9);
+  color: rgba(255, 204, 153, 0.8);
+  text-align:left;
+  display:absolute;
+  padding-bottom:	2.5rem;
+  padding-top:		5rem;
 }
 
-#info .box-2{
-  padding-top:2.5rem;
-  padding-left:5rem;
-  padding-right:3rem;
-  padding-bottom:2.5rem;
+#info h1
+{
+	font-family: 				'Playfair Display', serif;
+	font-size:					2rem;
+} 
+
+#info .box-1
+{
+	font-size: 1.4rem;
+	background: rgba(05, 05, 05, 0);
+	padding-top:7rem;
+	padding-left:5rem;
+	padding-right:5rem;
+	padding-bottom:5rem;
+}
+
+#info .box-2
+{
+	border: rgba(255, 204, 153, 0.5) 2px solid;
+	border-radius: 5px;
+	text-align:center;
+	background: rgba(05, 05, 05, 0);
+	color: rgba(255, 204, 153, 1);
+	padding-top:2.5rem;
+	padding-left:-2.5rem;
+	padding-right:-2.5rem;
+	margin-left:2.5rem;
+	margin-right:2.5rem;
+	margin-bottom:2.5rem;
 }
 
 #info .box-3{
-  padding:5rem 5rem;
+	padding:5rem 5rem;
+	background: rgba(05, 05, 05, 1);
 }
 
-#box .box-1{
-  background: rgba(22, 00, 10, 0.1);
+#list{
+	padding: 0vh 5vw;
+	background: rgba(05, 05, 05, 0.9);
+	color: rgba(255, 204, 153, 0.9);
+	justify-content:center;
+	/* align-items:center; */
+	text-align:left;
+	display: flex;
+	font-size:1.2rem;
+	padding: 0vw 18vw;
+	line-height:2;
+  
+}
+
+#list h1{
+  font-size:1.8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: rgba(255, 204, 153, 0.5) 2px solid;
+}
+
+#list h2{
+  font-size:1.2rem;
+}
+
+#list .bbox-1{
+  color: rgba(255, 204, 153, 0.9);
+  margin-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 2rem;
+  margin-bottom: 7rem;
+  text-align: left;
+}
+
+#list .bbox-2{
+  color: rgba(255, 204, 153, 0.9);
+  margin-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 7rem;
+  text-align: left;
+}
+
+#list .bbox-3{
+  color: rgba(255, 204, 153, 0.9);
+  margin-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 5rem;
+  margin-bottom: 7rem;
+  text-align: left;
+}
+
+#list .bbox-4{
+  color: rgba(255, 204, 153, 0.9);
+  margin-top: 7rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-bottom: 7rem;
+  text-align: left;
+}
+
+#list .bbox-5{
+  color: rgba(255, 204, 153, 0.9);
+  margin-top: 7rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-bottom: 7rem;
+  text-align: left;
+}
+
+#box{
+  padding: 0vh 0vh;
+  color: rgba(255, 204, 153, 0.9);
+  justify-content:center;
+/*   align-items:center; */
+  text-align:left;
+  display: absolute;
+  font-size:1.2rem;
+}
+
+#box h1{
+
+  font-size:1.8rem;
+  padding-bottom: 0.5rem;
+}
+
+#box .bbox-1{
+  background: rgba(22, 00, 10, 0);
   padding: 1.5rem;
   text-align:left;
   padding-left: 5rem;
+  padding-bottom: 5rem;
 }
 
-#box .box-2{
-  color:#050505;
-  background: rgba(255, 204, 153, 0.7);
+#box .bbox-2{
+  color: rgba(255, 204, 153, 0.9);
+  background: rgba(255, 204, 153, 0);
   padding: 1.5rem;
   text-align:left;
   padding-left: 5rem;
+
 }
 
-#box .box-3{
+#box .bbox-3{
   background:#000;
   padding: 1.5rem;
   text-align:left;
@@ -406,62 +657,93 @@ html {
 }
 
 #box .box-4{
-  background: rgba(05, 05, 05, 0.8);
+  background: rgba(05, 05, 05, 0.3);
   padding-top:2.5rem;
   padding-left:5rem;
   padding-right:5rem;
   padding-bottom:2.5rem;
 }
 
+#box img {
+  border: 2px solid #000;
+  padding: 5px;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
 #dbox{
+  background: rgba(22, 00, 10, 0);
+  color: rgba(255, 204, 153, 0.8);
   justify-content:center;
   text-align:left;
   display: -webkit-flex; /* Safari */
   display: flex;
   flex: 1;
+  padding-right: 5vw;
 }
 
 #dbox h1{
   color: rgba(255, 204, 153, 0.8);
-  font-size:1.5rem;
+  font-size:1.6rem;
   line-height:1.5;
-  padding: 0rem;
   padding-bottom: 1rem;
 }
 
 #dbox .dbox-1{
-  padding-top: 5rem;
-  padding-left: 5rem;
+  margin-top: 5rem;
   padding-right: 5rem;
-  padding-bottom: 5rem;
-  text-align: left;
+  margin-bottom: 7rem;
+
 }
 
 #dbox .dbox-2{
-  padding-top: 2rem;
+  margin-top: 5rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  padding-bottom: 5rem;
-  text-align: left;
-  background: rgba(44, 00, 20, 0.7);
+  margin-bottom: 7rem;
+
+  border-left: rgba(255, 204, 153, 0.5) 3px solid;
+  border-right: rgba(255, 204, 153, 0.5) 3px solid;
+  background: 0;
 }
 
 #dbox .dbox-3{
-  padding-top: 2rem;
+  margin-top: 5rem;
   padding-left: 2.5rem;
-  padding-right: 5rem;
-  padding-bottom: 5rem;
-  text-align: left;
+  margin-bottom: 7rem;
+
+}
+
+
+#dbox img {
+  border: 2px solid #000;
+  padding: 5px;
+  border-radius: 50%;
+  max-width: 13rem;
+  height: auto;
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #footer{
   font-size:1.1rem;
-  font-weight: 300;
-  padding: 5rem 5rem;
-  padding-top: 2.5rem;
-  color: rgba(255, 204, 153, 0.7);
+  padding: 7.5rem 18vw;
+  padding-top: 5rem;
+  color: rgba(255, 204, 153, 0.8);
   background: #050505;
   text-align: left;
+}
+
+#footer .bleak{
+  color: rgba(255, 204, 153, 0.8);
+  padding-top: 1.5rem;
+  text-align: left;
+  font-size: 0.9rem;
 }
 
 }
@@ -516,6 +798,7 @@ video {
 }
 
 #showcase h1{
+	
   color: rgba(255, 204, 153, 0.9);
   font-size:3rem;
   line-height:1.2;
@@ -555,27 +838,39 @@ video {
   color: rgba(255, 204, 153, 0.8);
   text-align:left;
   display:absolute;
+  padding-bottom:	2.5rem;
+  padding-top:		5rem;
 }
 
 #info h1
 {
-  font-size:1.6rem;
-  padding-bottom: 0.5rem;
+	font-family: 				'Playfair Display', serif;
+	font-size:					2rem;
 } 
 
-#info .box-1{
-  background: rgba(05, 05, 05, 1);
-  padding-top:7rem;
-  padding-left:5rem;
-  padding-right:5rem;
+#info .box-1
+{
+	font-size: 1.4rem;
+	background: rgba(05, 05, 05, 0);
+	padding-top:7rem;
+	padding-left:5rem;
+	padding-right:5rem;
+	padding-bottom:5rem;
 }
 
-#info .box-2{
-  background: rgba(05, 05, 05, 1);
-  padding-top:2.5rem;
-  padding-left:5rem;
-  padding-right:5rem;
-  padding-bottom:2.5rem;
+#info .box-2
+{
+	border: rgba(255, 204, 153, 0.5) 2px solid;
+	border-radius: 5px;
+	text-align:center;
+	background: rgba(05, 05, 05, 0);
+	color: rgba(255, 204, 153, 1);
+	padding-top:2.5rem;
+	padding-left:-2.5rem;
+	padding-right:-2.5rem;
+	margin-left:2.5rem;
+	margin-right:2.5rem;
+	margin-bottom:2.5rem;
 }
 
 #info .box-3{
@@ -583,6 +878,74 @@ video {
   background: rgba(05, 05, 05, 1);
 }
 
+#list{
+	padding: 0vh 18vw;
+	background: rgba(05, 05, 05, 0.9);
+	color: rgba(255, 204, 153, 0.9);
+	justify-content:center;
+	/* align-items:center; */
+	text-align:left;
+	display: flex;
+	font-size:1.2rem;
+	padding: 0vw 18vw;
+	line-height:2;
+  
+}
+
+#list h1{
+  font-size:1.8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: rgba(255, 204, 153, 0.5) 2px solid;
+}
+
+#list h2{
+  font-size:1.2rem;
+}
+
+#list .bbox-1{
+  color: rgba(255, 204, 153, 0.9);
+  margin-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 2.5rem;
+  margin-bottom: 7rem;
+  text-align: left;
+}
+
+#list .bbox-2{
+  color: rgba(255, 204, 153, 0.9);
+  margin-top: 5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-bottom: 7rem;
+  text-align: left;
+}
+
+#list .bbox-3{
+  color: rgba(255, 204, 153, 0.9);
+  margin-top: 5rem;
+  padding-left: 2.5rem;
+  padding-right: 5rem;
+  margin-bottom: 7rem;
+  text-align: left;
+}
+
+#list .bbox-4{
+  color: rgba(255, 204, 153, 0.9);
+  margin-top: 5rem;
+  padding-left: 0vw;
+  padding-right: 5vw;
+  margin-bottom: 7rem;
+  text-align: left;
+}
+
+#list .bbox-5{
+  color: rgba(255, 204, 153, 0.9);
+  margin-top: 5rem;
+  padding-left: 5vw;
+  padding-right: 0vw;
+  margin-bottom: 7rem;
+  text-align: left;
+}
 
 #box{
   padding: 0vh 0vh;
@@ -595,26 +958,29 @@ video {
 }
 
 #box h1{
-  font-size:1.4rem;
+
+  font-size:1.8rem;
   padding-bottom: 0.5rem;
 }
 
-#box .box-1{
-  background: rgba(22, 00, 10, 0.7);
+#box .bbox-1{
+  background: rgba(22, 00, 10, 0);
   padding: 1.5rem;
   text-align:left;
   padding-left: 5rem;
+  padding-bottom: 5rem;
 }
 
-#box .box-2{
-  color:#050505;
-  background: rgba(255, 204, 153, 0.9);
+#box .bbox-2{
+  color: rgba(255, 204, 153, 0.9);
+  background: rgba(255, 204, 153, 0);
   padding: 1.5rem;
   text-align:left;
   padding-left: 5rem;
+
 }
 
-#box .box-3{
+#box .bbox-3{
   background:#000;
   padding: 1.5rem;
   text-align:left;
@@ -622,7 +988,7 @@ video {
 }
 
 #box .box-4{
-  background: rgba(05, 05, 05, 0.8);
+  background: rgba(05, 05, 05, 0.3);
   padding-top:2.5rem;
   padding-left:5rem;
   padding-right:5rem;
@@ -638,8 +1004,8 @@ video {
 }
 
 #dbox{
-  background: rgba(22, 00, 10, 0.7);
-  color: rgba(255, 204, 153, 0.7);
+  background: rgba(22, 00, 10, 0);
+  color: rgba(255, 204, 153, 0.8);
   justify-content:center;
   text-align:left;
   display: -webkit-flex; /* Safari */
@@ -656,29 +1022,32 @@ video {
 }
 
 #dbox .dbox-1{
-  padding-top: 5rem;
+  margin-top: 5rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-bottom: 5rem;
+  margin-bottom: 7rem;
   text-align: left;
 }
 
 #dbox .dbox-2{
-  padding-top: 2rem;
+  margin-top: 5rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  padding-bottom: 5rem;
+  margin-bottom: 7rem;
   text-align: left;
-  background: rgba(44, 00, 20, 0.7);
+  border-left: rgba(255, 204, 153, 0.5) 3px solid;
+  border-right: rgba(255, 204, 153, 0.5) 3px solid;
+  background: 0;
 }
 
 #dbox .dbox-3{
-  padding-top: 2rem;
+  margin-top: 5rem;
   padding-left: 2.5rem;
-  padding-right: 5rem;
-  padding-bottom: 5rem;
+  padding-right: 2.5rem;
+  margin-bottom: 7rem;
   text-align: left;
 }
+
 
 #dbox img {
   border: 2px solid #000;
@@ -698,13 +1067,13 @@ video {
   font-size:1.1rem;
   padding: 7.5rem 18vw;
   padding-top: 5rem;
-  color: rgba(255, 204, 153, 0.7);
+  color: rgba(255, 204, 153, 0.8);
   background: #050505;
   text-align: left;
 }
 
 #footer .bleak{
-  color: rgba(255, 204, 153, 0.6);
+  color: rgba(255, 204, 153, 0.8);
   padding-top: 1.5rem;
   text-align: left;
   font-size: 0.9rem;
@@ -813,14 +1182,14 @@ video {
 
 
 #info .box-1{
-  background: rgba(05, 05, 05, 0.8);
+  background: rgba(05, 05, 05, 0);
   padding-top:2rem;
   padding-left:2rem;
   padding-right:1rem;
 }
 
 #info .box-2{
-  background: rgba(05, 05, 05, 0.8);
+  background: rgba(05, 05, 05, 0);
   padding-top:1.5rem;
   padding-left:2rem;
   padding-right:1rem;
@@ -829,7 +1198,7 @@ video {
 
 #info .box-3{
   padding:2rem 2rem;
-  background: rgba(05, 05, 05, 0.8);
+  background: rgba(05, 05, 05, 0);
 }
 
 
@@ -843,22 +1212,21 @@ video {
   font-size:1rem;
 }
 
-#box .box-1{
-  background: rgba(22, 00, 10, 0.7);
+#box .bbox-1{
+	color: rgba(255, 204, 153, 0.9);
   padding: 1rem;
   text-align:left;
   padding-left: 2rem;
 }
 
-#box .box-2{
-  color:#050505;
-  background: rgba(255, 204, 153, 0.7);
+#box .bbox-2{
+	color: rgba(255, 204, 153, 0.9);
   padding: 1rem;
   text-align:left;
   padding-left: 2rem;
 }
 
-#box .box-3{
+#box .bbox-3{
   background:#000;
   padding: 1rem;
   text-align:left;
@@ -888,13 +1256,15 @@ video {
   line-height:1.2;
   padding: 0.5rem;
   padding-left: 0rem;
+
 }
 
 #dbox .dbox-1{
   padding: 1.5rem;
   padding-top: 2rem;
-  padding-left: 4rem;
+  padding-left: 0rem;
   text-align: left;
+    text-align: center;
 }
 
 #dbox .dbox-2{
