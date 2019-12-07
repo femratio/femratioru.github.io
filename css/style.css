@@ -548,15 +548,14 @@ html {
 }
 
 #list{
-	padding: 0vh 5vw;
 	background: rgba(05, 05, 05, 0.9);
 	color: rgba(255, 204, 153, 0.9);
-	/* justify-content:center; */
+	justify-content:center;
 	/* align-items:center; */
 	text-align:left;
-	display: flex;
+	display: absolute;
 	font-size:1.2rem;
-	padding: 0vw 18vw;
+	padding: 0vw 5vw;
 	line-height:2;
   
 }
@@ -573,36 +572,38 @@ html {
 
 #list .bbox-1{
   color: rgba(255, 204, 153, 0.9);
-  margin-top: 5rem;
+  margin-top: 0rem;
+  padding-top: 5rem;
   padding-left: 5rem;
   padding-right: 2rem;
-  margin-bottom: 7rem;
+  margin-bottom: 2rem;
   text-align: left;
 }
 
 #list .bbox-2{
   color: rgba(255, 204, 153, 0.9);
   margin-top: 5rem;
-  padding-left: 2rem;
+  padding-left: 5rem;
   padding-right: 2rem;
-  margin-bottom: 7rem;
+  margin-bottom: 2rem;
   text-align: left;
 }
 
 #list .bbox-3{
   color: rgba(255, 204, 153, 0.9);
   margin-top: 5rem;
-  padding-left: 2rem;
+  padding-left: 5rem;
   padding-right: 5rem;
-  margin-bottom: 7rem;
+  margin-bottom: 0rem;
+  padding-bottom: 7rem;
   text-align: left;
 }
 
 #list .bbox-4{
   color: rgba(255, 204, 153, 0.9);
-  margin-top: 7rem;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  margin-top: 0rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   margin-bottom: 7rem;
   text-align: left;
 }
@@ -610,9 +611,9 @@ html {
 #list .bbox-5{
   color: rgba(255, 204, 153, 0.9);
   margin-top: 7rem;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  margin-bottom: 7rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-bottom: 0rem;
   text-align: left;
 }
 
@@ -748,7 +749,51 @@ html {
 
 }
 	/* end iPAD */
+@media screen and (min-width:910px){
 	
+#list
+{
+	/* align-items:center; */
+	display: flex;
+}
+
+#list .bbox-1
+{
+	padding-top: 0rem;
+  margin-top:				5rem;
+  padding-top:				0rem;
+	margin-bottom:	7rem;
+}
+
+#list .bbox-2
+{
+  margin-bottom: 7rem;
+}
+
+#list .bbox-3
+{
+	padding-bottom: 7rem;
+}
+
+#list .bbox-4
+{
+	margin-top: 7rem;
+  padding-top:				0rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+   margin-bottom: 7rem;
+}
+
+#list .bbox-5
+{
+	margin-top: 7rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-bottom: 7rem;
+}
+
+}
+
 	/* Desktop */
 @media screen and (min-width:1240px) {
 
