@@ -28,6 +28,50 @@
 <meta name="msapplication-wide310x150logo" content="media/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="media/mstile-310x310.png" />
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+	(function()
+	{
+		emailjs.init("user_pTC6z15e3FSYBe3r6GgiE");
+	})();
+</script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+<script>
+	$(document).ready(function()
+	{
+		$('.tel').mask('+0 (000) 000-0000', {placeholder: "+_(__)__-____"});
+	});
+</script>
+<script type="text/javascript">
+
+window.onload=function(){
+     
+
+	var sendform = $("form#sendform");
+	sendform.submit(function(event){
+	event.preventDefault();
+	// Change to your service ID, or keep using the default service
+	var service_id = "default_service";
+	var template_id = "femratio";
+	
+	sendform.find("button").text("Отправляем...");
+	emailjs.sendForm(service_id,template_id,sendform[0])
+		.then(function(){ 
+		alert("Мы вам перезвоним!");
+		sendform.find("button").text("Хочу!");
+	}, function(err) {
+		alert("Ошибка!\r\n причина:\n " + JSON.stringify(err));
+		sendform.find("button").text("Хочу!");
+	});
+	return false;
+});
+
+    }
+</script>
+	
 </head>
 <body>
 <header id="showcase">
@@ -39,27 +83,27 @@ WCAG general accessibility recommendation is that media such as background video
 <source src="media/bg_.webm" type="video/webm" controls>
 <source src="media/bg_.ogg" type="video/ogg" controls>
 </video>
- <div id="bg_video">
-	<img src="media/logo.png" class="logo">
-    <h1>Female Rationality School</h1>
-	<br>
-    <p></p>
-    <a href="#info" class="button">Идём</a>
-  </header>
- </div>
-  <section id="info">
-	<div class="box-1">
-	
-	<p>  Мы живем в мире доступной информации, но мы не всегда умеем <i>формировать</i> новое знание на основе полученных данных.<br><br>
-	<br><b>Female Rationality School</b> не предлагает готовое знание. Ты создашь свое знание сама.</p><br><br>
-	<br><p>Минимум теории. Максимум экспериментов над своим <i>сознанием</i>.</p>
-    </div>
-	<div class="box-2">
-		<h1> Тебе нужно пройти три ступени </h1>
-    </div>
+	<div id="bg_video">
+		<img src="media/logo.png" class="logo">
+		<h1>Female Rationality School</h1>
+		<br>
+		<p></p>
+		<a href="#sendform" class="button">Идём</a>
+	</header>
+	</div>
+	<section id="info">
+		<div class="box-1">	
+		<p>  Мы живем в мире доступной информации, но мы не всегда умеем <i>формировать</i> новое знание на основе полученных данных.<br><br>
+		<br><b>Female Rationality School</b> не предлагает готовое знание. Ты создашь свое знание сама.</p><br><br>
+		<br><p>Минимум теории. Максимум экспериментов над своим <i>сознанием</i>.</p>
+		</div>
 	</section>
+	
 	<section id="list">
-
+	<div class="header">
+		Тебе нужно пройти три ступени 
+	</div>
+		<div class="flex">
 	<div class="bbox-1">
     <h1>Мышление</h1>
 		<h2><p>Ты создаёшь собственную позицию.</p></h2><br>
@@ -91,16 +135,18 @@ WCAG general accessibility recommendation is that media such as background video
 		<i>&nbsp;рождение инсайтов с помощью юмора</i>
 		</ul>
 	</div>
-	
-	</section>
+	</div>
 
+	</section>
 	<section id="info">
+
 	<section id="box">
-	
+
 	<div class="bbox-2">
+	
 	<h1> Кто ты ?</h1><br>
-		<p>Женщина вне ярлыков или желающая от них избавиться</p><br><br><br>
-		<p>Ищешь женщин вне ярлыков или желающих от них избавиться</p>
+		<p>Ты женщина вне ярлыков или желающая от них избавиться</p><br><br><br>
+		<p>Ты ищешь женщин вне ярлыков или желающих от них избавиться</p>
 	</div>
 	
 	<div class="bbox-1">
@@ -112,6 +158,8 @@ WCAG general accessibility recommendation is that media such as background video
 	</section>
 	</section>
 	<section id="list">
+	<div class="flex">
+	
 	<div class="bbox-4">
 	<h1> Твоё время</h1>
 		<ul>
@@ -130,6 +178,7 @@ WCAG general accessibility recommendation is that media such as background video
 		</ul>
 	</div>
 	
+	</div>
 	</section>
 	<section id="info">
   <div class="box-2">
@@ -143,30 +192,43 @@ WCAG general accessibility recommendation is that media such as background video
     </div>
    
      <div class="dbox-2">
-	 	<h1>Натали Новинская</h1><br>
-	<p>  Магистр лингвистики НИУ ВШЭ</p><br>
-	<p>  Специалист по межкультурным коммуникациям МПГУ</p><br> 
+	 	<h1>Натали Новинская</h1><br><br><br>
+	<p>  Магистр лингвистики НИУ ВШЭ</p><br><br><br>
+	<p>  Специалист по межкультурным коммуникациям МПГУ</p><br> <br><br>
 	<p>  Выпускница факультета образования </p>
-	<p>   Университета Барселоны</p><br>
+	<p>   Университета Барселоны</p><br><br><br>
 	<p>  Автор работ по политической коммуникации</p>  
   </div>
 	<div class="dbox-3">
-	<h1> С опытом</h1><br>
-	<p>  Сценических выступлений 500+ человек </p><br>
-	<p>  Режиссерской и сценарной работы</p> <br>
-	<p>  Психологической консультации</p><br>
+	<h1> С опытом</h1><br><br><br>
+	<p>  Сценических выступлений 500+ человек </p><br><br><br>
+	<p>  Режиссерской и сценарной работы</p> <br><br><br>
+	<p>  Психологической консультации</p><br><br><br>
 	<p>  Создания собственного музыкального проекта </p> 
   </div>
   
   </section>
+	<div class="box-2" style="background:rgba(05, 05, 05, 0.3);border:none;">
+		<form id="sendform" method="post">
+		<label>Твоё имя</label>
+		<input type="text" name="Name" placeholder="Хильдега́рда Би́нгенская" pattern="[a-zA-Z\u0400-\u04ff\-\']{2,64}" required/>
+		<label>Электрическая почта</label>
+		<input type="email"  name="Email" placeholder="litterae@ignot.ae" required/>
+		<label>Номер телефона</label>
+		<input type="text" class="tel" name="Phone" data-mask="+0 (000) 000-0000" required/>
+		<button>Хочу!</button>
+		</form>
+	</div>
+  </section>
   
-  </section>
-  <section id="footer">
-	<p>femratio@gmail.com</p><p><br>
-	<i>WhatsApp</i>
-	<i>Telegram</i>
-	<br>+7 9190398622</p> 
-	<p><div class="bleak">© 2019 Female Rationality School</div></p> 
-  </section>
+<section id="footer">
+	<p>
+	<a href="mailto:femratio@gmail.com" title="Gmail"> <img src="media/gmail.svg" style="width:24px;height:24px;padding-right:1rem;filter:sepia(100%) saturate(200%);"></a>
+	<a href="https://wa.me/79190398622" title="WhatsApp"> <img src="media/whatsapp.svg" style="width:24px;height:24px;padding-right:1rem;filter:sepia(100%) saturate(200%);"></a>
+	<a href="https://t.me/79190398622" title="Telegram"> <img src="media/telegram.svg" style="width:24px;height:24px;padding-right:1rem;filter:sepia(100%) saturate(200%);"></a>
+	</p><br><br><br> 
+	<p style="font-size:0.9rem">&copy 2019 Female Rationality School</p> 
+</section>
+
 </body>
 </html>
