@@ -331,14 +331,15 @@ textarea:required:invalid
 #list h1
 {
 	font-family: 				'Playfair Display', serif;
-	font-size:					1.8rem;
-	margin-bottom:				2rem;
+	font-size:					1.4rem;
+	margin-bottom:				0.5rem;
 	border-bottom:				rgba(255, 204, 153, 0.5) 2px solid;
+	text-align:					center;
 }
 
 #list h2
 {
-	font-size:					1.2rem;
+	font-size:					1rem;
 }
 
 #list .bbox-1
@@ -398,20 +399,20 @@ textarea:required:invalid
 {
 	font-family: 				'Playfair Display', serif;
 	font-weight:				bold;
-	font-size:					2rem;
+	font-size:					1.5rem;
 	border:						rgba(255, 204, 153, 0.5) 2px solid;
 	border-radius:				5px;
 	text-align:					center;
 	background:					rgba(05, 05, 05, 0);
 	color:						rgba(255, 204, 153, 1);
-	padding-top:				2.5rem;
-	padding-bottom:				2.5rem;
-	padding-left:				-2.5rem;
-	padding-right:				-2.5rem;
+	padding-top:				2rem;
+	padding-bottom:				2rem;
+	padding-left:				2rem;
+	padding-right:				2rem;
 	margin-top:					5rem;
 	margin-left:				2.5rem;
 	margin-right:				2.5rem;
-	margin-bottom:				2.5rem;
+	margin-bottom:				0.5rem;
 }
 
 #box

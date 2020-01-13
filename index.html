@@ -1,234 +1,236 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/style.css">
-	
-			
-<link rel="apple-touch-icon-precomposed" sizes="57x57" href="media/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="media/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="media/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="media/apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon-precomposed" sizes="60x60" href="media/apple-touch-icon-60x60.png" />
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="media/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="media/apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="media/apple-touch-icon-152x152.png" />
-<link rel="icon" type="image/png" href="media/favicon-196x196.png" sizes="196x196" />
-<link rel="icon" type="image/png" href="media/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/png" href="media/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="media/favicon-16x16.png" sizes="16x16" />
-<link rel="icon" type="image/png" href="media/favicon-128.png" sizes="128x128" />
+    <head>
+	      <meta charset="UTF-8">
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		  <link rel="stylesheet" href="css/normalize.css">
+	      <link rel="stylesheet" href="css/style.css">
+	      
+			  
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="media/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="media/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="media/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="media/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="media/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="media/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="media/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="media/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="media/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="media/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="media/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="media/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="media/favicon-128.png" sizes="128x128" />
 
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-TileImage" content="media/mstile-144x144.png" />
-<meta name="msapplication-square70x70logo" content="media/mstile-70x70.png" />
-<meta name="msapplication-square150x150logo" content="media/mstile-150x150.png" />
-<meta name="msapplication-wide310x150logo" content="media/mstile-310x150.png" />
-<meta name="msapplication-square310x310logo" content="media/mstile-310x310.png" />
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="media/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="media/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="media/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="media/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="media/mstile-310x310.png" />
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-<script type="text/javascript">
-	(function()
-	{
-		emailjs.init("user_pTC6z15e3FSYBe3r6GgiE");
-	})();
-</script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script type="text/javascript">
+	       (function()
+	           {
+		             emailjs.init("user_pTC6z15e3FSYBe3r6GgiE");
+	       })();
+        </script>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
-<script>
-	$(document).ready(function()
-	{
-		$('.tel').mask('+0 (000) 000-0000', {placeholder: "+_(__)__-____"});
-	});
-</script>
-<script type="text/javascript">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+        <script>
+	       $(document).ready(function()
+	           {
+		             $('.tel').mask('+0 (000) 000-0000', {placeholder: "Мобильный номер"});
+	       });
+        </script>
+        <script type="text/javascript">
 
-window.onload=function(){
-     
+         window.onload=function(){
+             
 
-	var sendform = $("form#sendform");
-	sendform.submit(function(event){
-	event.preventDefault();
-	// Change to your service ID, or keep using the default service
-	var service_id = "default_service";
-	var template_id = "femratio";
-	
-	sendform.find("button").text("Отправляем...");
-	emailjs.sendForm(service_id,template_id,sendform[0])
-		.then(function(){ 
-		alert("Мы вам перезвоним!");
-		sendform.find("button").text("Хочу!");
-	}, function(err) {
-		alert("Ошибка!\r\n причина:\n " + JSON.stringify(err));
-		sendform.find("button").text("Хочу!");
-	});
-	return false;
-});
+	           var sendform = $("form#sendform");
+	           sendform.submit(function(event){
+	               event.preventDefault();
+	               // Change to your service ID, or keep using the default service
+	               var service_id = "default_service";
+	               var template_id = "femratio";
+	               
+	               sendform.find("button").text("Отправляем...");
+	               emailjs.sendForm(service_id,template_id,sendform[0])
+		                    .then(function(){ 
+		                        alert("Мы вам перезвоним!");
+		                        sendform.find("button").text("Хочу!");
+	                      }, function(err) {
+		                        alert("Ошибка!\r\n причина:\n " + JSON.stringify(err));
+		                        sendform.find("button").text("Хочу!");
+	                      });
+	               return false;
+             });
 
-    }
-</script>
-	
-</head>
-<body>
-<header id="showcase">
-<video id="video" playsInline autoplay muted noaudio loop>
-  <!-- 
-- Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
-WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-<source src="media/bg_.mp4" type="video/mp4" controls>
-<source src="media/bg_.webm" type="video/webm" controls>
-<source src="media/bg_.ogg" type="video/ogg" controls>
-</video>
-	<div id="bg_video">
-		<img src="media/logo.png" class="logo">
-		<h1>Female Rationality School</h1>
-		<br>
-		<p></p>
-		<a href="#sendform" class="button">Идём</a>
-	</header>
-	</div>
-	<section id="info">
-		<div class="box-1">	
-		<p>  Мы живем в мире доступной информации, но мы не всегда умеем <i>формировать</i> новое знание на основе полученных данных.<br><br>
-		<br><b>Female Rationality School</b> не предлагает готовое знание. Ты создашь свое знание сама.</p><br><br>
-		<br><p>Минимум теории. Максимум экспериментов над своим <i>сознанием</i>.</p>
-		</div>
-	</section>
-	
-	<section id="list">
-	<div class="header">
-		Тебе нужно пройти три ступени 
-	</div>
-		<div class="flex">
-	<div class="bbox-1">
-    <h1>Мышление</h1>
-		<h2><p>Ты создаёшь собственную позицию.</p></h2><br>
-		<ul>
-		<li><i>Теория познания</i></li>
-		<li><i>Введение в рациональность</i></li>
-		<li><i>Психология влияния</i></li>
-		<li><i>Этика и рациональность</i></li>
-		</ul>
-	</div>
-	<div class="bbox-2">
-	<h1>Язык</h1>
-		<h2><p>Ты выбираешь подходящую форму твоих мыслей.</p></h2><br>
-		<ul>
-		<li><i>Лексический инструментарий</i></li>
-		<li><i>Искусство сторителлинга</i></li>
-		<li><i>Техника работы с голосом</i></li>
-		<li><i>Основы публичной речи</i></li>
-		</ul>
-	</div>
-	
-	<div class="bbox-3">
-	<h1>Выражение</h1>
-		<h2><p>Ты объединяешь язык и мышление.</p></h2><br>
-		<ul>
-		<li><i>Избавление от социальных установок</i></li>
-		<li><i>Работа с телом как способ работы с сознанием</i></li>
-		<li><i>Комедийная импровизация :</i></li>
-		<i>&nbsp;рождение инсайтов с помощью юмора</i>
-		</ul>
-	</div>
-	</div>
+         }
+        </script>
+	      
+    </head>
+    <body>
+        <header id="showcase">
+            <video id="video" playsInline autoplay muted noaudio loop>
+                <!-- 
+                   - Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
+                     WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+                <source src="media/bg_.mp4" type="video/mp4" controls>
+                <source src="media/bg_.webm" type="video/webm" controls>
+                <source src="media/bg_.ogg" type="video/ogg" controls>
+            </video>
+	          <div id="bg_video">
+		            <img src="media/logo.png" class="logo">
+		            <h1>Female Rationality School</h1>
+		            <br>
+		            <p></p>
+		            <a href="#sendform" class="button">Идём</a>
+	      </header>
+	          </div>
+	          <section id="info">
+		            <div class="box-1">	
+		                <p>  Мы живем в мире доступной информации, но мы не всегда умеем <b>формировать</b> новое знание на основе полученных данных.<br><br>
+		                    <br><b>Female Rationality School</b> не предлагает готовое знание. <br><br><br> Ты создашь свое знание сама.</p><br><br>
+		                    <br><p>Минимум теории. <br/><br/><br/>Максимум экспериментов над своим <b>сознанием</b>.</p>
+		            </div>
+	          </section>
+	          
+	          <section id="list">
+	              <div class="header">
+		                Тебе нужно пройти три ступени 
+	              </div>
+		            <div class="flex">
+	                  <div class="bbox-1">
+                        <h1>Мышление</h1>
+		                    <h2><p>Ты создаёшь собственную позицию.</p></h2><br>
+		                    <ul>
+		                        <li>Теория познания</li>
+		                        <li>Введение в рациональность</li>
+		                        <li>Психология влияния</li>
+		                        <li>Этика и рациональность</li>
+		                    </ul>
+	                  </div>
+	                  <div class="bbox-2">
+	                      <h1>Язык</h1>
+		                    <h2><p>Ты выбираешь подходящую форму твоих мыслей.</p></h2><br>
+		                    <ul>
+		                        <li>Лексический инструментарий</li>
+		                        <li>Искусство сторителлинга</li>
+		                        <li>Техника работы с голосом</li>
+		                        <li>Основы публичной речи</li>
+		                    </ul>
+	                  </div>
+	                  
+	                  <div class="bbox-3">
+	                      <h1>Выражение</h1>
+		                    <h2><p>Ты объединяешь язык и мышление.</p></h2><br>
+		                    <ul>
+		                        <li>Избавление от социальных установок</li>
+		                        <li>Работа с телом как способ работы с сознанием</li>
+		                        <li>Комедийная импровизация :</li>
+		                        &nbsp;рождение инсайтов с помощью юмора
+		                    </ul>
+	                  </div>
+	              </div>
 
-	</section>
-	<section id="info">
+	          </section>
+	          <section id="info">
 
-	<section id="box">
+	              <section id="box">
 
-	<div class="bbox-2">
-	
-	<h1> Кто ты ?</h1><br>
-		<p>Ты женщина вне ярлыков или желающая от них избавиться</p><br><br><br>
-		<p>Ты ищешь женщин вне ярлыков или желающих от них избавиться</p>
-	</div>
-	
-	<div class="bbox-1">
-	<h1> Что ты хочешь?</h1><br>
-		<p>Приобрести инструменты для создания собственных убеждений</p><br><br><br>
-		<p>Научиться успешно функционировать в высококонкурентной среде</p><br><br><br>
-		<p>Найти единомышленников</p> 
-	</div>
-	</section>
-	</section>
-	<section id="list">
-	<div class="flex">
-	
-	<div class="bbox-4">
-	<h1> Твоё время</h1>
-		<ul>
-		<li>27 занятий</li>
-		<li>2 раза в неделю</li>
-		<li>2,5 часа</li>
-		</ul>
-	</div>
-	
-	<div class="bbox-5">
-	<h1> Твои ресурсы</h1>
-		<ul>
-		<li>10.000 одна ступень<br>(9 занятий)</li>
-		<li>30.000 за полный курс</li> 
-		<li>15 мест в группе</li>
-		</ul>
-	</div>
-	
-	</div>
-	</section>
-	<section id="info">
-  <div class="box-2">
-  <h1>Твой ментор</h1>
-  </div>
-  <section id="dbox">
-   
-	<div class="dbox-1">
-	<img src="media/natalie.jpg">
+	                  <div class="bbox-2">
+	                      
+	                      <h1> Кто ты ?</h1><br>
+		                    <p>Ты женщина вне ярлыков или желающая от них избавиться</p><br><br><br>
+		                    <p>Ты ищешь женщин вне ярлыков или желающих от них избавиться</p>
+	                  </div>
+	                  
+	                  <div class="bbox-1">
+	                      <h1> Что ты хочешь?</h1><br>
+		                    <p>Приобрести инструменты для создания собственных убеждений</p><br><br><br>
+		                    <p>Научиться успешно функционировать в высококонкурентной среде</p><br><br><br>
+		                    <p>Найти единомышленников</p> 
+	                  </div>
+	              </section>
+	          </section>
+	          <section id="list">
+	              <div class="flex">
+	                  
+	                  <div class="bbox-4">
+	                      <h1> Твоё время</h1>
+		                    <ul>
+		                        <li>27 занятий</li>
+		                        <li>2 раза в неделю</li>
+		                        <li>2,5 часа</li>
+		                    </ul>
+	                  </div>
+	                  
+	                  <div class="bbox-5">
+	                      <h1> Твои ресурсы</h1>
+		                    <ul>
+		                        <li>10.000 одна ступень<br>(9 занятий)</li>
+		                        <li>30.000 за полный курс</li> 
+		                        <li>15 мест в группе</li>
+		                    </ul>
+	                  </div>
+	                  
+	              </div>
+	          </section>
+	          <section id="info">
+                <div class="box-2">
+                    <h1>Твой ментор</h1>
+                </div>
+                <section id="dbox">
+                    
+	                  <div class="dbox-1">
+	                      <img src="media/natalie.jpg">
 
-    </div>
-   
-     <div class="dbox-2">
-	 	<h1>Натали Новинская</h1><br><br><br>
-	<p>  Магистр лингвистики НИУ ВШЭ</p><br><br><br>
-	<p>  Специалист по межкультурным коммуникациям МПГУ</p><br> <br><br>
-	<p>  Выпускница факультета образования </p>
-	<p>   Университета Барселоны</p><br><br><br>
-	<p>  Автор работ по политической коммуникации</p>  
-  </div>
-	<div class="dbox-3">
-	<h1> С опытом</h1><br><br><br>
-	<p>  Сценических выступлений 500+ человек </p><br><br><br>
-	<p>  Режиссерской и сценарной работы</p> <br><br><br>
-	<p>  Психологической консультации</p><br><br><br>
-	<p>  Создания собственного музыкального проекта </p> 
-  </div>
-  
-  </section>
-	<div class="box-2" style="background:rgba(05, 05, 05, 0.3);border:none;">
-		<form id="sendform" method="post">
-		<label>Твоё имя</label>
-		<input type="text" name="Name" placeholder="Хильдега́рда Би́нгенская" pattern="[a-zA-Z\u0400-\u04ff\-\']{2,64}" required/>
-		<label>Электрическая почта</label>
-		<input type="email"  name="Email" placeholder="litterae@ignot.ae" required/>
-		<label>Номер телефона</label>
-		<input type="text" class="tel" name="Phone" data-mask="+0 (000) 000-0000" required/>
-		<button>Хочу!</button>
-		</form>
-	</div>
-  </section>
-  
-<section id="footer">
-	<p>
-	<a href="mailto:femratio@gmail.com" title="Gmail"> <img src="media/gmail.svg" style="width:24px;height:24px;padding-right:1rem;filter:sepia(100%) saturate(200%);"></a>
-	<a href="https://wa.me/79190398622" title="WhatsApp"> <img src="media/whatsapp.svg" style="width:24px;height:24px;padding-right:1rem;filter:sepia(100%) saturate(200%);"></a>
-	<a href="https://t.me/79190398622" title="Telegram"> <img src="media/telegram.svg" style="width:24px;height:24px;padding-right:1rem;filter:sepia(100%) saturate(200%);"></a>
-	</p><br><br><br> 
-	<p style="font-size:0.9rem">&copy 2019 Female Rationality School</p> 
-</section>
+                    </div>
+                    
+                    <div class="dbox-2">
+	 	                    <h1>Натали Новинская</h1><br><br><br>
+	                      <p>  Магистр лингвистики НИУ ВШЭ</p><br><br><br>
+	                      <p>  Специалист по межкультурным коммуникациям МПГУ</p><br> <br><br>
+	                      <p>  Выпускница факультета образования </p>
+	                      <p>   Университета Барселоны</p><br><br><br>
+	                      <p>  Автор работ по политической коммуникации</p>  
+                    </div>
+	                  <div class="dbox-3">
+	                      <h1> С опытом</h1><br><br><br>
+	                      <p>  Сценических выступлений 500+ человек </p><br><br><br>
+	                      <p>  Режиссерской и сценарной работы</p> <br><br><br>
+	                      <p>  Психологической консультации</p><br><br><br>
+	                      <p>  Создания собственного музыкального проекта </p> 
+                    </div>
+                    
+                </section>
+	              <div class="box-2" style="background:rgba(05, 05, 05, 0.3);border:none;">
+		                <form id="sendform" method="post">
+		                    <h1>Регистрация</h1>
+                        <br/><br/><br/><br/>
+		                    <input type="text" name="Name" placeholder="Ваше Имя" pattern="[a-zA-Z\u0400-\u04ff\-\']{2,64}" required/>
+		                    
+		                    <input type="email"  name="Email" placeholder="E-mail" required/>
+		                    
+		                    <input type="text" class="tel" name="Phone" data-mask="+0 (000) 000-0000" required/>
+		                    <button>Отправить</button>
+		                </form>
+	              </div>
+            </section>
+            
+            <section id="footer">
+	              <p>
+	                  <a href="mailto:femratio@gmail.com" title="Gmail"> <img src="media/gmail.svg" style="width:24px;height:24px;padding-right:1rem;filter:sepia(100%) saturate(250%);"></a>
+	                  <a href="https://wa.me/79190398622" title="WhatsApp"> <img src="media/whatsapp.svg" style="width:24px;height:24px;padding-right:1rem;filter:sepia(100%) saturate(250%);"></a>
+	                  <a href="https://t.me/79190398622" title="Telegram"> <img src="media/telegram.svg" style="width:24px;height:24px;padding-right:1rem;filter:sepia(100%) saturate(250%);"></a>
+	              </p><br><br><br> 
+	              <p style="font-size:0.9rem">&copy 2019 Female Rationality School</p> 
+            </section>
 
-</body>
+    </body>
 </html>
