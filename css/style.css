@@ -135,6 +135,11 @@ form textarea
 	border:						rgba(255, 204, 153, 0.5)	0.2rem solid;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255, 204, 153, 0.8);;
+  opacity: 0.5; /* Firefox */
+}
+
 form button
 {
 	font-family: 				'Playfair Display', serif;
