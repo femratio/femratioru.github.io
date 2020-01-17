@@ -145,7 +145,7 @@ form button
 	font-size:					1.3em;
 	text-decoration:			none;
 	background:					rgba(44, 00, 20, 0.8);
-	padding:					0.8em 2.2em;
+	padding:					0.8em;
 	color:						rgba(255, 204, 153, 0.8);
 	transition:					0.3s;
 }
